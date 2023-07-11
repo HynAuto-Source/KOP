@@ -1,2 +1,2 @@
-# KOP
-This repository is used to maintain the regression script of KOP
+# KOP_SmokeTestCases
+This repository is used to maintain the smoke script of KOP
