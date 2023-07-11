@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KIA-CWP">
+ 
+  
+  <parameter name="category" value="Smoke Testing"></parameter>
+	<parameter name="authors" value="HAEA-KIA"></parameter>
+	
+  <test  name="VehicleStatus : Verify the vehicle name"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC006_1"></parameter>
+	 <parameter name="testCaseName" value="VehicleStatus : Verify the vehicle name "></parameter>
+	 <parameter name="testDescription" value="VehicleStatus : Verify the vehicle name - Smoke Test"></parameter>
+    <classes>
+     <class name="testcases.TC006_VehicleStatus">
+		  <methods> 
+			  <include name="VehicleStatusVerifyTheVehicleName"></include>
+		  </methods>
+		  </class>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test  name="VehicleStatus : NearbyGasStations"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC006_2"></parameter>
+	 <parameter name="testCaseName" value="VehicleStatus : NearbyGasStations"></parameter>
+	 <parameter name="testDescription" value="VehicleStatus : NearbyGasStations - Smoke Test"></parameter>
+    <classes>
+     <class name="testcases.TC006_VehicleStatus">
+		  <methods> 
+			  <include name="nearByGasStation"></include>
+		  </methods>
+		  </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <!--  <test  name="VehicleStatus : NearbyChargingStations "  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC006_2"></parameter>
+	 <parameter name="testCaseName" value="VehicleStatus : NearbyChargingStations"></parameter>
+	 <parameter name="testDescription" value="VehicleStatus : NearbyChargingStations - Smoke Test"></parameter>
+    <classes>
+     <class name="testcases.TC006_VehicleStatus">
+		  <methods> 
+			  <include name="nearByChargingStation"></include>
+		  </methods>
+		  </class>
+    </classes>
+  </test>  --><!-- Test -->
+  
+</suite> <!-- Suite -->

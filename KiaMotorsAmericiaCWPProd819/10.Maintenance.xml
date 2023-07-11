@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KIA-CWP">
+	
+	<parameter name="category" value="Smoke Testing"></parameter>
+	<parameter name="authors" value="HAEA-KIA"></parameter>
+	
+	<!-- <test  name="Maintenance :  Next Miles" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_1"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Next Miles"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Next Miles - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		  		<include name="checkNextMaintenanceMiles"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  -->
+  
+   
+<test  name="Maintenance :  Complete Milestone" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_2"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Complete Milestone"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Complete Milestone - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="completeMilestone"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	 
+	
+	  <test  name="Maintenance :  Update Milestone" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_3"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Update Milestone"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Update Milestone - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="updateMilestone"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+
+  	 <test  name="Maintenance :  Incomplete Milestone" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_4"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Incomplete Milestone"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Incomplete Milestone - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="incompleteMilestone"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  
+  
+  	  <test  name="Maintenance :  Choose a Dealer" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_5"></parameter>
+	 <parameter name="testCaseName" value="Maintenance :  Choose a Dealer"></parameter>
+	 <parameter name="testDescription" value="Maintenance :  Choose a Dealer - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="chooseAdealer"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+	
+	
+	
+	<test  name="Maintenance :  update a Dealer" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_6"></parameter>
+	 <parameter name="testCaseName" value="Maintenance :  update a Dealer"></parameter>
+	 <parameter name="testDescription" value="Maintenance :  update a Dealer - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="updateAdealer"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+
+	 
+	 
+	 <!-- 
+	 <test  name="Maintenance :  Book Appointment" preserve-order="true">         This is iframe
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_7"></parameter>
+	 <parameter name="testCaseName" value="Maintenance :  Book Appointment"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Book Appointment- Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="requestDealerAppointments"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	  -->
+	
+</suite> <!-- Suite -->

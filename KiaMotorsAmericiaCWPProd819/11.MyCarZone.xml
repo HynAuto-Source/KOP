@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KIA-CWP">
+	
+	<parameter name="category" value="Smoke Testing"></parameter>
+	<parameter name="authors" value="HAEA-KIA"></parameter>
+	
+	 <test  name="MyCarZone - Create GeoFence Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_1"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone Create GeoFence Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Create GeoFence Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="geoFenceAlert"></include>
+			
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	
+	
+	
+	<test  name="MyCarZone - Update GeoFence Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_2"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Update GeoFence Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone  Update GeoFence Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="updateGeoFenceAlert"></include>
+			
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	
+	
+	
+	 <test  name="MyCarZone - Delete GeoFence Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_3"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Delete GeoFence Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Delete GeoFence Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="deleteGeoFenceAlert"></include>
+
+		  </methods>
+	  </class>      
+    </classes>
+  </test>    
+ 
+  
+  <test  name="Curfew Alert - Create Curfew Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_4"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Create Curfew Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Create Curfew Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="curfewAlert"></include>
+		  </methods>
+	  </class>      
+    </classes> 
+  </test>   
+   
+  
+    
+   <test  name="Curfew Alert - Update Curfew Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_5"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Update Curfew Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Update Curfew Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="updateCurfewAlert"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>    
+     
+  
+  
+     <test  name="Curfew Alert - Delete Curfew Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_6"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Delete Curfew Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Delete Curfew Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="deleteCurfewAlert"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+   
+     <test  name="Speed Alert - Update Speed Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_7"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Update Speed Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Update Speed Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="updateCurfewAlertMCZ"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+ 
+	
+</suite> <!-- Suite -->

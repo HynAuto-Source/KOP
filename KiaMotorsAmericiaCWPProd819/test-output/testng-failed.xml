@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [KIA-CWP]">
+  <parameter name="dataSheetName" value="TC013_3"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="testCaseName" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver"/>
+  <parameter name="category" value="Smoke Testing"/>
+  <parameter name="testDescription" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver -Smoke Test"/>
+  <parameter name="authors" value="HAEA-KIA"/>
+  <test name="Additional Drivers - unLinkTheSCAccountByPrimaryDriver(failed)">
+    <parameter name="dataSheetName" value="TC013_3"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="testCaseName" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver"/>
+    <parameter name="testDescription" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver -Smoke Test"/>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+        <methods>
+          <include name="unLinkTheSCAccountByPrimaryDriver" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testcases.TC013_AdditionalDrivers -->
+    </classes>
+  </test> <!-- Additional Drivers - unLinkTheSCAccountByPrimaryDriver(failed) -->
+</suite> <!-- Failed suite [KIA-CWP] -->

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KIA-CWP">
+	
+	<parameter name="category" value="Smoke Testing"></parameter>
+	<parameter name="authors" value="HAEA-KIA"></parameter>
+	
+    <test  name="Additional Drivers" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_1"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="addSecondaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+
+
+   
+  <test  name="Additional Drivers - acceptRequestFromPrimaryAccount " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_2"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - acceptRequestFromPrimaryAccount"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers -acceptRequestFromPrimaryAccount - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="acceptRequestFromPrimaryAccount"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+  
+
+ 
+
+  
+   
+	<test  name="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers deleteTheVehicleFromSecondaryDriverAccount Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="deleteTheVehicleFromSecondaryDriverAccount"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+  
+   	
+   <test  name="Additional Drivers - Add Driver for reject the request" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_1"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - Add Driver for reject the request"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers : Add Driver for reject the request - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="addSecondaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  <test  name="Additional Drivers - rejectThePrimaryDriverRequest" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - rejectThePrimaryDriverRequest"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - rejectThePrimaryDriverRequest -  Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="rejectThePrimaryDriverRequest"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>   
+  
+  
+  <test  name="Additional Drivers - addRequestBySecondaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - addRequestBySecondaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - addRequestBySecondaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="addRequestBySecondaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+  
+  
+  <test  name="Additional Drivers - scRequestAcceptedByPrimaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - scRequestAcceptedByPrimaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - scRequestAcceptedByPrimaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="scRequestAcceptedByPrimaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>   
+  
+  
+  <test  name="Additional Drivers - unLinkTheSCAccountByPrimaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="unLinkTheSCAccountByPrimaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+   
+  
+
+  <test  name="Additional Drivers - deleteTheSCDriversAccountByPrimaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - deleteTheSCDriversAccountByPrimaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - deleteTheSCDriversAccountByPrimaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="deleteTheSCDriversAccountByPrimaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+   
+  
+ <test  name="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers deleteTheVehicleFromSecondaryDriverAccount Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="deleteTheVehicleFromSecondaryDriverAccount"></include>
+		  </methods>
+	  </class>      
+    </classes>
+   </test> 
+  
+  
+	<!--<test  name="Additional Drivers - secondaryDriverInitiateTheRequest " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_5"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - secondaryDriverInitiateTheRequest"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers secondaryDriverInitiateTheRequest Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="secondaryDriverInitiateTheRequest"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>-->
+	
+	<!--
+	 <test  name="Additional Drivers  - secondaryDriverAddVehicle  acceptRequestFromPrimaryAccount " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers secondaryDriverAddVehicle - acceptRequestFromPrimaryAccount"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers secondaryDriverAddVehicle -acceptRequestFromPrimaryAccount - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="secondaryDriverAddVehicle"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  -->
+  
+  
+  <!--  <test  name="Additional Drivers - verifyTheLinkedDriver " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - verifyTheLinkedDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers -verifyTheLinkedDriver- Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="linkedDriverIsDisplayed"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  -->
+	
+</suite> <!-- Suite -->

@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="KIA-CWP">
+	
+	<parameter name="category" value="Smoke Testing"></parameter>
+	<parameter name="authors" value="HAEA-KIA"></parameter>
+	
+	
+ <!-- ================== Create Account =======================  -->
+	
+	<test  name="Create Account"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC001"></parameter>
+	 <parameter name="testCaseName" value="Create Account"></parameter>
+	 <parameter name="testDescription" value="Create Account - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC001_CreateAccount">
+		  <methods> 
+			  <include name="verifyCreateAccount"></include>
+			  <include name="clickTermsOfServiceLink"></include>
+			  <include name="clickPrivacyPolicyLink"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+ <!-- ================== Login  =======================  -->
+ 
+<test  name="Login"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC002"></parameter>
+	 <parameter name="testCaseName" value="Login"></parameter>
+	 <parameter name="testDescription" value="Login - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC002_Login">
+		  <methods> 
+		      <include name="verifySignInIsDisplayed"></include>
+			  <include name="verifyLoginIn"></include>
+			  <include name="verifyForgotPassword"></include>
+			  <include name="verifyRememberMecheckbox"></include>  
+			  <include name="verifyLogout"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+
+
+ <!-- ================== My Vehicles =======================  -->
+
+<test  name="My Vehicles" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC004"></parameter>
+	 <parameter name="testCaseName" value="My Vehicles"></parameter>
+	 <parameter name="testDescription" value="My Vehicles - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC004_MyVehicles">
+		  <methods> 
+			  <include name="myVehiclesPickTheVehicle"></include>
+			  <include name="myVehiclesClickAddvehicle"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+   
+  
+  <!-- ================== Dashboard =======================  -->
+   
+ <test  name="Dashboard"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC005"></parameter>
+	 <parameter name="testCaseName" value="Dashboard"></parameter>
+	 <parameter name="testDescription" value="Dashboard - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC005_Dashboard">
+		  <methods>  
+			   <include name="DashboardClickDoorUnLock"></include>
+			  <include name="DashboardClickDoorLock"></include>
+			  <include name="DashboardClickRemoteClimateStartStop"></include>
+			  <include name="Dashboard_ClickMasterRefresh"></include>
+			  <include name="DashboardLastRefreshExist"></include> 
+			  <!-- <include name="DashboardClickRemoteClimateStartWithToggles"></include>  -->
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+ <!-- ================== Vehicle Status =======================  -->
+  
+  <test  name="VehicleStatus" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC006_1"></parameter>
+	 <parameter name="testCaseName" value="VehicleStatus"></parameter>
+	 <parameter name="testDescription" value="My Vehicles - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC006_VehicleStatus">
+		  <methods> 
+			  <include name="VehicleStatusVerifyTheVehicleName"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  
+   <test  name="VehicleStatus : NearbyGasStations"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC006_2"></parameter>
+	 <parameter name="testCaseName" value="VehicleStatus : NearbyGasStations"></parameter>
+	 <parameter name="testDescription" value="VehicleStatus : NearbyGasStations - Smoke Test"></parameter>
+    <classes>
+     <class name="testcases.TC006_VehicleStatus">
+		  <methods> 
+			  <include name="nearByGasStation"></include>
+		  </methods>
+		  </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <!--  <test  name="VehicleStatus : NearbyChargingStations "  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC006_2"></parameter>
+	 <parameter name="testCaseName" value="VehicleStatus : NearbyChargingStations"></parameter>
+	 <parameter name="testDescription" value="VehicleStatus : NearbyChargingStations - Smoke Test"></parameter>
+    <classes>
+     <class name="testcases.TC006_VehicleStatus">
+		  <methods> 
+			  <include name="nearByChargingStation"></include>
+		  </methods>
+		  </class>
+    </classes>
+  </test> --> 
+  
+<!-- ================== Schedules =======================  -->
+   
+ <test  name="Schedules" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC008"></parameter>
+	 <parameter name="testCaseName" value="Schedules"></parameter>
+	 <parameter name="testDescription" value="Schedules - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC008_Schedules">
+		  <methods>  
+			 <include name="createNewSchedule"></include>  
+			  <include name="updateExistingSchedule"></include>
+			  <include name="enableParentToggle"></include> 
+			  <include name="scheduleIsDisplayedRemoteSection"></include>
+			   <include name="deleteSchedule"></include> 
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  
+ <!-- ================== Remote Section  =======================  --> 
+     
+   <test  name="RemoteSection" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC007"></parameter>
+	 <parameter name="testCaseName" value="RemoteSection"></parameter>
+	 <parameter name="testDescription" value="RemoteSection - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC007_RemoteSection">
+		  <methods>  
+			  <include name="RemoteSectionDoorUnlockRS"></include>
+			  <include name="RemoteSectionDoorLock"></include>
+			  <include name="RemoteSectionClimateStart"></include> 
+			  <include name="RemoteSectionClimateStop"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+	
+	
+ <!-- ================== Locations =======================  -->
+	
+	 <test  name="Locations" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC009"></parameter>
+	 <parameter name="testCaseName" value="Locations"></parameter>
+	 <parameter name="testDescription" value="Locations - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC009_Locations">
+		  <methods>  
+			  	<include name="LocationsSearchIsPresent"> </include>
+		  		<include name="LocationsVehicleCurrentLocation"> </include>
+		  		<include name="LocationsSavePOI"> </include>
+		  		<include name="LocationsDeletePOI"> </include>
+		  		<include name="LocationsSavePOISendToVehiclenDelete"> </include>   
+		 	    <include name="LocationsAddTags"> </include>
+		 	    <include name="deleteTheTags"> </include> 
+		 		<include name="LocationsMergeTrips"> </include> 
+		 	    <include name="LocationsAddTagsForMergedTrips"> </include> 
+		 	     <include name="deleteTheTagsForMergedTrip"> </include>
+		 	    <include name="LocationsUnmergeTrips"> </include>
+		  </methods> 
+	  </class>      
+    </classes>
+  </test>
+  
+  
+ <!-- ================== Maintenance =======================  -->
+ 
+    <!-- <test  name="Maintenance :  Next Miles" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_1"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Next Miles"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Next Miles - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		  		<include name="checkNextMaintenanceMiles"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  -->
+ 
+   
+  <test  name="Maintenance :  Complete Milestone" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_2"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Complete Milestone"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Complete Milestone - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="completeMilestone"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	 
+	
+	  <test  name="Maintenance :  Update Milestone" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_3"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Update Milestone"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Update Milestone - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="updateMilestone"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+ 
+  	 <test  name="Maintenance :  Incomplete Milestone" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_4"></parameter>
+	 <parameter name="testCaseName" value="Maintenance : Incomplete Milestone"></parameter>
+	 <parameter name="testDescription" value="Maintenance : Incomplete Milestone - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="incompleteMilestone"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  
+  
+  	  <test  name="Maintenance :  Choose a Dealer" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_5"></parameter>
+	 <parameter name="testCaseName" value="Maintenance :  Choose a Dealer"></parameter>
+	 <parameter name="testDescription" value="Maintenance :  Choose a Dealer - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="chooseAdealer"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+	
+	
+	
+	<test  name="Maintenance :  update a Dealer" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC010_6"></parameter>
+	 <parameter name="testCaseName" value="Maintenance :  update a Dealer"></parameter>
+	 <parameter name="testDescription" value="Maintenance :  update a Dealer - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC010_Maintenance">
+		  <methods>  
+		 		<include name="updateAdealer"> </include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	
+  
+  
+  
+ <!-- ================== MyCarZone =======================  -->
+  
+   <test  name="MyCarZone - Create GeoFence Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_1"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone Create GeoFence Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Create GeoFence Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="geoFenceAlert"></include>
+			
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	
+	
+	
+	<test  name="MyCarZone - Update GeoFence Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_2"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Update GeoFence Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone  Update GeoFence Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="updateGeoFenceAlert"></include>
+			
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+	
+	
+	
+	 <test  name="MyCarZone - Delete GeoFence Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_3"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Delete GeoFence Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Delete GeoFence Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="deleteGeoFenceAlert"></include>
+
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+ 
+  
+  <test  name="Curfew Alert - Create Curfew Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_4"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Create Curfew Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Create Curfew Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="curfewAlert"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+  
+    
+   <test  name="Curfew Alert - Update Curfew Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_5"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Update Curfew Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Update Curfew Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="updateCurfewAlert"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>   
+  
+  
+  
+     <test  name="Curfew Alert - Delete Curfew Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_6"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Delete Curfew Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Delete Curfew Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="deleteCurfewAlert"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+  
+  
+          <test  name="Speed Alert - Update Speed Alert" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC011_7"></parameter>
+	 <parameter name="testCaseName" value="MyCarZone  Update Speed Alert"></parameter>
+	 <parameter name="testDescription" value="MyCarZone Update Speed Alert - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC011_MyCarZone">
+		  <methods>  
+			  <include name="updateCurfewAlertMCZ"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+  
+
+  
+  <!-- ================== Settings  =======================  -->
+  
+	<test  name="Settings Update Personal Details"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_1"></parameter>
+	 <parameter name="testCaseName" value="Settings Update Personal Details"></parameter>
+	 <parameter name="testDescription" value="Settings Update Personal Details - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			  <include name="personalDetails"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+	
+	
+	<test  name="Settings Phone Number Verified"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_2"></parameter>
+	 <parameter name="testCaseName" value="Settings Phone Number Verified"></parameter>
+	 <parameter name="testDescription" value="Settings Phone Number Verified - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			  <include name="phoneNumberVerified"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+	 
+	<test  name="Settings Change Password"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_3"></parameter>
+	 <parameter name="testCaseName" value="Settings Change Password"></parameter>
+	 <parameter name="testDescription" value="Settings Change Password - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			  <include name="settingsChangePassword"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+  
+  
+	<test  name="Settings Update PIN"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_4"></parameter>
+	 <parameter name="testCaseName" value="Settings Update PIN"></parameter>
+	 <parameter name="testDescription" value="Settings Update PIN - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			 <include name="settingsUpdatePIN"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  <test  name="Settings Update PIN with password"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_5"></parameter>
+	 <parameter name="testCaseName" value="Settings Update PIN with password"></parameter>
+	 <parameter name="testDescription" value="Settings Update PIN with password - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			 <include name="settingsUpdatePINWithPassword"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  
+    <test  name="Settings CP SMS Toggle"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_6"></parameter>
+	 <parameter name="testCaseName" value="Settings CP SMS Toggle"></parameter>
+	 <parameter name="testDescription" value="Settings CP SMS Toggle - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			 <include name="settingsCPEnableToggle"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  
+  <test  name="Settings CP SMS Toggle - PIN update with password"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_7"></parameter>
+	 <parameter name="testCaseName" value="Settings Update PIN with password"></parameter>
+	 <parameter name="testDescription" value="Settings Update PIN with password - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			 <include name="settingsCPTurnOffToggle"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+   
+  
+  <test  name="Settings Kia Connect Notification Turn Off"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_7"></parameter>
+	 <parameter name="testCaseName" value="Settings Kia Connect Notification Turn Off "></parameter>
+	 <parameter name="testDescription" value="Settings Kia Connect Notification Turn Off - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			 <include name="settingsKiaConnectNotificationAlertsTurnOff"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+  <test  name="Settings Kia Connect Notification Turn On"  preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC000_7"></parameter>
+	 <parameter name="testCaseName" value="Settings Kia Connect Notification Turn On"></parameter>
+	 <parameter name="testDescription" value="Settings Kia Connect Notification Turn On - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC000_Settings">
+		  <methods> 
+			 <include name="settingsKiaConnectNotificationAlertsTurnOn"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  
+   <!-- ================== Additional Driver =======================  -->
+   
+
+
+  <test  name="Additional Drivers" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_1"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="addSecondaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+
+
+   
+  <test  name="Additional Drivers - acceptRequestFromPrimaryAccount " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_2"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - acceptRequestFromPrimaryAccount"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers -acceptRequestFromPrimaryAccount - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="acceptRequestFromPrimaryAccount"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+  
+
+ 
+
+  
+   
+	<test  name="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers deleteTheVehicleFromSecondaryDriverAccount Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="deleteTheVehicleFromSecondaryDriverAccount"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>  
+  
+   	
+   <test  name="Additional Drivers - Add Driver for reject the request" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_1"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - Add Driver for reject the request"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers : Add Driver for reject the request - Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="addSecondaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>
+  
+  <test  name="Additional Drivers - rejectThePrimaryDriverRequest" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - rejectThePrimaryDriverRequest"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - rejectThePrimaryDriverRequest -  Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="rejectThePrimaryDriverRequest"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>   
+  
+  
+  <test  name="Additional Drivers - addRequestBySecondaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - addRequestBySecondaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - addRequestBySecondaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="addRequestBySecondaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+  
+  
+  
+  <test  name="Additional Drivers - scRequestAcceptedByPrimaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - scRequestAcceptedByPrimaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - scRequestAcceptedByPrimaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="scRequestAcceptedByPrimaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test>   
+  
+  
+  <test  name="Additional Drivers - unLinkTheSCAccountByPrimaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - unLinkTheSCAccountByPrimaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="unLinkTheSCAccountByPrimaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+   
+  
+
+  <test  name="Additional Drivers - deleteTheSCDriversAccountByPrimaryDriver" preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_3"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - deleteTheSCDriversAccountByPrimaryDriver"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers - deleteTheSCDriversAccountByPrimaryDriver -Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="deleteTheSCDriversAccountByPrimaryDriver"></include>
+		  </methods>
+	  </class>      
+    </classes>
+  </test> 
+   
+  
+ <test  name="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount " preserve-order="true">
+  	 <parameter name="browser" value="chrome"></parameter>
+  	 <parameter name="dataSheetName" value="TC013_4"></parameter>
+	 <parameter name="testCaseName" value="Additional Drivers - deleteTheVehicleFromSecondaryDriverAccount"></parameter>
+	 <parameter name="testDescription" value="Additional Drivers deleteTheVehicleFromSecondaryDriverAccount Smoke Test"></parameter>
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+		  <methods>  
+			  <include name="deleteTheVehicleFromSecondaryDriverAccount"></include>
+		  </methods>
+	  </class>      
+    </classes>
+   </test> 
+  
+  
+</suite> 

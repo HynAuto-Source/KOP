@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testcases.TC013_AdditionalDrivers">
+        <methods>
+          <include name="linkedDriverIsDisplayed"/>
+          <include name="deleteTheVehicleFromSecondaryDriverAccount"/>
+          <include name="beforeTest"/>
+          <include name="acceptRequestFromPrimaryAccount"/>
+          <include name="afterTest"/>
+          <include name="addSecondaryDriver"/>
+        </methods>
+      </class> <!-- testcases.TC013_AdditionalDrivers -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
